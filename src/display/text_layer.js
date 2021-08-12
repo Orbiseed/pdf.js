@@ -620,13 +620,11 @@ class TextLayerRenderTask {
   get promise() {
     return this._capability.promise;
   }
-}
-
 
   /**
    * Cancel rendering of the textLayer.
    */
-   cancel() {
+  cancel() {
     this._canceled = true;
     if (this._reader) {
       this._reader.cancel(new AbortException("TextLayer task cancelled."));
@@ -838,6 +836,7 @@ class TextLayerRenderTask {
       }
     }
   }
+}
 
 /**
  * @param {TextLayerRenderParameters} renderParameters
