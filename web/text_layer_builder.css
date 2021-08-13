@@ -62,7 +62,8 @@
 }
 
 .textLayer ::selection {
-  background: rgba(0, 0, 255, 1);
+  color: transparent;
+  background: rgba(0, 0, 255, 0.3);
 }
 
 .textLayer .endOfContent {
